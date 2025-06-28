@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,6 +13,8 @@ import Sobre from "./pages/Sobre";
 import Sugestoes from "./pages/Sugestoes";
 import Apoie from "./pages/Apoie";
 import NotFound from "./pages/NotFound";
+import GuiaPrompts from "./pages/GuiaPrompts";
+import GuiaPromptsFundamentos from "./pages/GuiaPromptsFundamentos";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/guias" element={<Guias />} />
+              <Route path="/guias/prompts" element={<GuiaPrompts />} />
+              <Route path="/guias/prompts/como-criar-prompt" element={<GuiaPromptsFundamentos />} />
               <Route path="/ferramentas" element={<Ferramentas />} />
               <Route path="/projetos" element={<Projetos />} />
               <Route path="/sobre" element={<Sobre />} />

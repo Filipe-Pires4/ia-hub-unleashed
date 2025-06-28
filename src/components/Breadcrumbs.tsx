@@ -9,6 +9,15 @@ const Breadcrumbs = () => {
   const getBreadcrumbName = (path: string) => {
     const names: { [key: string]: string } = {
       'guias': 'Guias',
+      'prompts': 'Guia de Prompts',
+      'como-criar-prompt': 'Como Criar um Bom Prompt',
+      'saas': 'Prompts de SaaS',
+      'landing-page': 'Prompts de Landing Page',
+      'crm': 'Prompts de CRM',
+      'backend': 'Prompts de Backend',
+      'frontend': 'Prompts de Frontend',
+      'arquitetura': 'Prompts de Arquitetura',
+      'engenharia-prompt': 'Prompts de Engenharia de Prompt',
       'ferramentas': 'Ferramentas',
       'projetos': 'Projetos & Desafios',
       'sobre': 'Sobre',
