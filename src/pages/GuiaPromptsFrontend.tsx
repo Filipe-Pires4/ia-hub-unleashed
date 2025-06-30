@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Globe, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Monitor, ArrowRight, ArrowLeft } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 const GuiaPromptsFrontend = () => {
@@ -65,7 +65,7 @@ const GuiaPromptsFrontend = () => {
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <Globe className="h-8 w-8 text-yellow-400 mr-3" />
+            <Monitor className="h-8 w-8 text-yellow-400 mr-3" />
             <h1 className="text-3xl md:text-4xl font-bold">Prompts de Frontend</h1>
           </div>
           <p className="text-xl text-gray-300">

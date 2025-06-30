@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Zap, ArrowLeft } from 'lucide-react';
+import { Wrench, ArrowLeft } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 const GuiaPromptsEngenhariaPrompt = () => {
@@ -65,11 +65,11 @@ const GuiaPromptsEngenhariaPrompt = () => {
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <Zap className="h-8 w-8 text-red-400 mr-3" />
+            <Wrench className="h-8 w-8 text-orange-400 mr-3" />
             <h1 className="text-3xl md:text-4xl font-bold">Prompts de Engenharia de Prompt</h1>
           </div>
           <p className="text-xl text-gray-300">
-            Técnicas meta para aperfeiçoar suas próprias técnicas de prompting e criar prompts mais eficazes.
+            Exemplos práticos e técnicas avançadas para criar prompts mais eficazes, incluindo few-shot, zero-shot e controle de parâmetros.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ const GuiaPromptsEngenhariaPrompt = () => {
           {prompts.map((prompt, index) => (
             <div key={index} className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-bold text-red-300 mb-4">
+                <h3 className="text-xl font-bold text-orange-300 mb-4">
                   {index + 1}. {prompt.title}
                 </h3>
               </div>
@@ -96,17 +96,6 @@ const GuiaPromptsEngenhariaPrompt = () => {
           ))}
         </div>
 
-        {/* Conclusão */}
-        <div className="bg-gradient-to-r from-red-600/20 to-purple-600/20 border border-red-500/30 rounded-2xl p-8 mt-12">
-          <h2 className="text-2xl font-bold text-red-300 mb-4">Parabéns!</h2>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            Você concluiu todos os 8 capítulos do Guia de Prompts para Lovable. Agora você possui um arsenal de <strong className="text-red-400">70 prompts de alta qualidade</strong> e conhece as técnicas fundamentais para criar seus próprios prompts eficazes.
-          </p>
-          <p className="text-gray-300 leading-relaxed">
-            Continue praticando e experimentando com essas técnicas. Lembre-se: a iteração é a chave para o aperfeiçoamento contínuo!
-          </p>
-        </div>
-
         {/* Navegação */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-700">
           <Link
@@ -119,9 +108,9 @@ const GuiaPromptsEngenhariaPrompt = () => {
           
           <Link
             to="/guias/prompts"
-            className="flex items-center bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            className="flex items-center bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
-            Voltar ao Índice do Guia
+            Voltar ao Hub de Prompts
           </Link>
         </div>
       </div>

@@ -1,24 +1,13 @@
 
 import { Link } from 'react-router-dom';
-import { Code, ArrowRight, ArrowLeft } from 'lucide-react';
+import { GitBranch, ArrowRight, ArrowLeft } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 const GuiaPromptsArquitetura = () => {
   const prompts = [
     {
       title: "Prompt de Arquiteto de Software",
-      content: "Gere um prompt claro e detalhado para o agente Claude-3.5-Sonnet que o instrua a atuar como um arquiteto de software sênior. O agente será encarregado de responder a perguntas específicas fornecidas sobre arquitetura de software. Cada resposta deve ser formulada individualmente e apresentada em um novo documento.",
-      specifications: [
-        "Especificação de Papel: O agente deve atuar como um arquiteto de software sênior, demonstrando experiência em padrões de design de software, estilos arquitetônicos e melhores práticas.",
-        "Manuseio de Perguntas: O agente deve abordar cada pergunta separadamente, garantindo clareza e exaustividade nas respostas.",
-        "Melhores Práticas: As respostas devem refletir as melhores práticas da indústria, incluindo recomendações apropriadas para ferramentas, metodologias e princípios de design.",
-        "Solicitações de Recursos: Se for necessário esclarecimento adicional ou recursos externos forem necessários, o agente deve se sentir à vontade para solicitar isso ao usuário."
-      ],
-      requirements: [
-        "Uma explicação clara do conceito ou solução.",
-        "Justificativa para quaisquer recomendações feitas.",
-        "Exemplos ou cenários onde aplicável para ilustrar os pontos."
-      ],
+      content: "Gere um prompt claro e detalhado para o agente Claude-3.5-Sonnet que o instrua a atuar como um arquiteto de software sênior. O agente será encarregado de responder a perguntas específicas fornecidas sobre arquitetura de software. Cada resposta deve ser formulada individualmente e apresentada em um novo documento. Especificação de Papel: O agente deve atuar como um arquiteto de software sênior, demonstrando experiência em padrões de design de software, estilos arquitetônicos e melhores práticas. Manuseio de Perguntas: O agente deve abordar cada pergunta separadamente, garantindo clareza e exaustividade nas respostas. Melhores Práticas: As respostas devem refletir as melhores práticas da indústria, incluindo recomendações apropriadas para ferramentas, metodologias e princípios de design. Solicitações de Recursos: Se for necessário esclarecimento adicional ou recursos externos forem necessários, o agente deve se sentir à vontade para solicitar isso ao usuário. Cada resposta deve incluir: Uma explicação clara do conceito ou solução. Justificativa para quaisquer recomendações feitas. Exemplos ou cenários onde aplicável para ilustrar os pontos.",
       rating: "9/10 - Define papel, detalhado, formato de saída."
     },
     {
@@ -76,11 +65,11 @@ const GuiaPromptsArquitetura = () => {
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <Code className="h-8 w-8 text-orange-400 mr-3" />
+            <GitBranch className="h-8 w-8 text-indigo-400 mr-3" />
             <h1 className="text-3xl md:text-4xl font-bold">Prompts de Arquitetura de Software</h1>
           </div>
           <p className="text-xl text-gray-300">
-            Explora frameworks modernos e otimização de desempenho para sistemas distribuídos e arquiteturas complexas.
+            Focados no design e estruturação de sistemas complexos, cobrindo microsserviços, segurança, performance e escalabilidade.
           </p>
         </div>
 
@@ -89,7 +78,7 @@ const GuiaPromptsArquitetura = () => {
           {prompts.map((prompt, index) => (
             <div key={index} className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-bold text-orange-300 mb-4">
+                <h3 className="text-xl font-bold text-indigo-300 mb-4">
                   {index + 1}. {prompt.title}
                 </h3>
               </div>
@@ -99,36 +88,6 @@ const GuiaPromptsArquitetura = () => {
                   "{prompt.content}"
                 </p>
               </div>
-
-              {/* Especificações adicionais para o primeiro prompt */}
-              {prompt.specifications && (
-                <div className="mb-4">
-                  <h4 className="text-lg font-semibold text-orange-300 mb-3">Especificações:</h4>
-                  <ul className="space-y-2">
-                    {prompt.specifications.map((spec, specIndex) => (
-                      <li key={specIndex} className="flex items-start">
-                        <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-gray-300">{spec}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {/* Requisitos adicionais para o primeiro prompt */}
-              {prompt.requirements && (
-                <div className="mb-4">
-                  <h4 className="text-lg font-semibold text-orange-300 mb-3">Cada resposta deve incluir:</h4>
-                  <ul className="space-y-2">
-                    {prompt.requirements.map((req, reqIndex) => (
-                      <li key={reqIndex} className="flex items-start">
-                        <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-gray-300">{req}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
               
               <div className="text-sm text-green-400 font-medium">
                 <strong>Avaliação:</strong> {prompt.rating}
@@ -149,9 +108,9 @@ const GuiaPromptsArquitetura = () => {
           
           <Link
             to="/guias/prompts/engenharia-prompt"
-            className="flex items-center bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            className="flex items-center bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
-            Próximo: Engenharia de Prompt
+            Próximo: Prompts de Engenharia de Prompt
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>

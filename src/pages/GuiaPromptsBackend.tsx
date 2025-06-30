@@ -65,7 +65,7 @@ const GuiaPromptsBackend = () => {
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <Server className="h-8 w-8 text-green-400 mr-3" />
+            <Server className="h-8 w-8 text-red-400 mr-3" />
             <h1 className="text-3xl md:text-4xl font-bold">Prompts de Backend</h1>
           </div>
           <p className="text-xl text-gray-300">
@@ -78,7 +78,7 @@ const GuiaPromptsBackend = () => {
           {prompts.map((prompt, index) => (
             <div key={index} className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-bold text-green-300 mb-4">
+                <h3 className="text-xl font-bold text-red-300 mb-4">
                   {index + 1}. {prompt.title}
                 </h3>
               </div>
@@ -108,7 +108,7 @@ const GuiaPromptsBackend = () => {
           
           <Link
             to="/guias/prompts/frontend"
-            className="flex items-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            className="flex items-center bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
             Próximo: Prompts de Frontend
             <ArrowRight className="ml-2 h-4 w-4" />

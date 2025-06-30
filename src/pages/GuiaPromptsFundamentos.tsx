@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { BookOpen, ArrowRight, ArrowLeft, Target, Lightbulb, CheckCircle } from 'lucide-react';
+import { BookOpen, ArrowRight } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 const GuiaPromptsFundamentos = () => {
@@ -16,167 +16,110 @@ const GuiaPromptsFundamentos = () => {
             <h1 className="text-3xl md:text-4xl font-bold">Como Criar um Bom Prompt</h1>
           </div>
           <p className="text-xl text-gray-300">
-            Aprenda os fundamentos para criar prompts eficazes usando métodos comprovados e técnicas avançadas.
+            Fundamentos essenciais para criar prompts eficazes que maximizam a qualidade das respostas do Lovable.
           </p>
         </div>
 
         {/* Conteúdo Principal */}
-        <div className="prose prose-lg prose-invert max-w-none">
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 mb-8">
-            <p className="text-lg leading-relaxed text-gray-300">
+        <div className="space-y-8">
+          {/* Introdução */}
+          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+            <p className="text-gray-300 leading-relaxed mb-6">
               Criar um bom prompt para o Lovable é uma arte que combina clareza, especificidade e contexto. Para maximizar a eficácia de suas interações, considere os seguintes princípios:
             </p>
           </div>
 
-          {/* Método P.A.C.E.R. */}
-          <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 border border-purple-500/30 rounded-2xl p-8 mb-8">
-            <div className="flex items-center mb-6">
-              <Target className="h-6 w-6 text-purple-400 mr-3" />
-              <h2 className="text-2xl font-bold text-purple-300">Acrônimo P.A.C.E.R.</h2>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">🎭 Papel</h3>
-                  <p className="text-gray-300">Defina claramente o papel que a IA deve assumir.</p>
-                  <div className="bg-gray-800/50 p-3 rounded-lg mt-2">
-                    <code className="text-purple-300">"Atue como um arquiteto de software sênior..."</code>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">⚡ Ação</h3>
-                  <p className="text-gray-300">Especifique a tarefa a ser realizada.</p>
-                  <div className="bg-gray-800/50 p-3 rounded-lg mt-2">
-                    <code className="text-purple-300">"...projete e implemente um sistema de reserva..."</code>
-                  </div>
-                </div>
+          {/* Acrônimo P.A.C.E.R. */}
+          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+            <h2 className="text-2xl font-bold text-purple-300 mb-6">Acrônimo P.A.C.E.R.</h2>
+            <div className="space-y-4">
+              <div className="border-l-4 border-purple-500 pl-6">
+                <h3 className="text-lg font-semibold text-purple-200 mb-2">Papel</h3>
+                <p className="text-gray-300">Defina claramente o papel que a IA deve assumir. Ex: "Atue como um arquiteto de software sênior..."</p>
               </div>
-              
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">🌍 Contexto</h3>
-                  <p className="text-gray-300">Forneça informações relevantes e o cenário.</p>
-                  <div className="bg-gray-800/50 p-3 rounded-lg mt-2">
-                    <code className="text-purple-300">"...para eventos de grande escala..."</code>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">📋 Estrutura</h3>
-                  <p className="text-gray-300">Indique o formato de saída desejado.</p>
-                  <div className="bg-gray-800/50 p-3 rounded-lg mt-2">
-                    <code className="text-purple-300">"...apresente em diagrama Mermaid..."</code>
-                  </div>
-                </div>
+              <div className="border-l-4 border-purple-500 pl-6">
+                <h3 className="text-lg font-semibold text-purple-200 mb-2">Ação</h3>
+                <p className="text-gray-300">Especifique a tarefa a ser realizada. Ex: "...projete e implemente um sistema de reserva de ingressos..."</p>
               </div>
-            </div>
-            
-            <div className="mt-6">
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-2">🚫 Restrições</h3>
-                <p className="text-gray-300">Defina limites ou requisitos específicos.</p>
-                <div className="bg-gray-800/50 p-3 rounded-lg mt-2">
-                  <code className="text-purple-300">"...garantindo alta disponibilidade e baixa latência."</code>
-                </div>
+              <div className="border-l-4 border-purple-500 pl-6">
+                <h3 className="text-lg font-semibold text-purple-200 mb-2">Contexto</h3>
+                <p className="text-gray-300">Forneça informações relevantes e o cenário. Ex: "...para eventos de grande escala, gerenciando disponibilidade de assentos..."</p>
+              </div>
+              <div className="border-l-4 border-purple-500 pl-6">
+                <h3 className="text-lg font-semibold text-purple-200 mb-2">Estrutura (Formato)</h3>
+                <p className="text-gray-300">Indique o formato de saída desejado. Ex: "...apresente a arquitetura em um diagrama Mermaid e um relatório detalhado."</p>
+              </div>
+              <div className="border-l-4 border-purple-500 pl-6">
+                <h3 className="text-lg font-semibold text-purple-200 mb-2">Restrições</h3>
+                <p className="text-gray-300">Defina limites ou requisitos específicos. Ex: "...garantindo alta disponibilidade e baixa latência."</p>
               </div>
             </div>
           </div>
 
           {/* Método 80/20 */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 mb-8">
-            <div className="flex items-center mb-4">
-              <CheckCircle className="h-6 w-6 text-green-400 mr-3" />
-              <h2 className="text-2xl font-bold text-white">Método 80/20 na Criação de Prompts</h2>
-            </div>
+          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+            <h2 className="text-2xl font-bold text-purple-300 mb-4">Método 80/20 na Criação de Prompts</h2>
             <p className="text-gray-300 leading-relaxed">
-              Concentre <strong className="text-green-400">80%</strong> do seu esforço em definir claramente o objetivo e o contexto, e <strong className="text-green-400">20%</strong> em refinar a linguagem e adicionar detalhes específicos. Um prompt bem estruturado economiza tempo e melhora a qualidade das respostas.
+              Concentre 80% do seu esforço em definir claramente o objetivo e o contexto, e 20% em refinar a linguagem e adicionar detalhes específicos. Um prompt bem estruturado economiza tempo e melhora a qualidade das respostas.
             </p>
           </div>
 
           {/* Bullet Points */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 mb-8">
-            <h2 className="text-2xl font-bold text-white mb-6">Bullet Points para Clareza</h2>
-            <p className="text-gray-300 mb-6">
-              Para garantir que seu prompt seja claro e completo, utilize bullet points para:
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-white">Listar Requisitos:</strong>
-                    <span className="text-gray-300"> Enumere todas as funcionalidades esperadas</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-white">Definir Etapas:</strong>
-                    <span className="text-gray-300"> Descreva cada passo do processo</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-white">Especificar Formatos:</strong>
-                    <span className="text-gray-300"> Indique formato de saída desejado</span>
-                  </div>
-                </li>
-              </ul>
-              
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-white">Separar Informações:</strong>
-                    <span className="text-gray-300"> Organize informações complexas</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-white">Destacar Prioridades:</strong>
-                    <span className="text-gray-300"> Marque elementos mais importantes</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+            <h2 className="text-2xl font-bold text-purple-300 mb-6">Bullet Points para Clareza</h2>
+            <p className="text-gray-300 mb-4">Para garantir que seu prompt seja claro e completo, utilize bullet points para:</p>
+            <ul className="space-y-3 text-gray-300">
+              <li className="flex items-start">
+                <span className="text-purple-400 mr-3">•</span>
+                <div>
+                  <strong className="text-purple-200">Listar Requisitos:</strong> Enumere todas as funcionalidades, características ou dados específicos que você espera no resultado.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-purple-400 mr-3">•</span>
+                <div>
+                  <strong className="text-purple-200">Definir Etapas:</strong> Se a tarefa envolver um processo, descreva cada passo em um bullet point separado.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-purple-400 mr-3">•</span>
+                <div>
+                  <strong className="text-purple-200">Especificar Formatos:</strong> Indique o formato de saída desejado para diferentes partes da resposta (ex: "lista", "tabela", "código").
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-purple-400 mr-3">•</span>
+                <div>
+                  <strong className="text-purple-200">Separar Informações:</strong> Use bullet points para organizar informações complexas ou múltiplas instruções, tornando o prompt mais legível.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-purple-400 mr-3">•</span>
+                <div>
+                  <strong className="text-purple-200">Destacar Prioridades:</strong> Marque com bullet points os elementos mais importantes ou as prioridades do projeto.
+                </div>
+              </li>
+            </ul>
           </div>
 
           {/* Dica Ninja */}
-          <div className="bg-gradient-to-r from-yellow-600/20 to-orange-600/20 border border-yellow-500/30 rounded-2xl p-8 mb-8">
-            <div className="flex items-center mb-6">
-              <Lightbulb className="h-6 w-6 text-yellow-400 mr-3" />
-              <h2 className="text-2xl font-bold text-yellow-300">Dica Ninja</h2>
-            </div>
-            
-            <div className="space-y-4">
+          <div className="bg-gradient-to-r from-purple-900 to-purple-800 rounded-2xl p-8 border border-purple-600">
+            <h2 className="text-2xl font-bold text-yellow-300 mb-6">🥷 Dica Ninja</h2>
+            <div className="space-y-4 text-gray-200">
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">🔄 Iteração é Chave</h3>
-                <p className="text-gray-300">Não espere o prompt perfeito na primeira tentativa. Comece com um prompt básico e refine-o iterativamente com base nos resultados.</p>
+                <strong className="text-yellow-300">Iteração é Chave:</strong> Não espere o prompt perfeito na primeira tentativa. Comece com um prompt básico e refine-o iterativamente com base nos resultados.
               </div>
-              
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">💡 Use Exemplos (Few-shot)</h3>
-                <p className="text-gray-300">Para tarefas complexas, forneça 1-2 exemplos de entrada/saída no prompt. Isso ajuda a IA a entender melhor o padrão desejado.</p>
+                <strong className="text-yellow-300">Use Exemplos (Few-shot):</strong> Para tarefas complexas ou com um estilo de saída específico, forneça 1-2 exemplos de entrada/saída no prompt. Isso ajuda a IA a entender melhor o padrão desejado.
               </div>
-              
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">🎯 Seja Explícito sobre o Público-Alvo</h3>
-                <p className="text-gray-300">Mencione se o resultado é para público técnico ou leigo. Ex: "Explique em termos leigos..." ou "Use terminologia técnica..."</p>
+                <strong className="text-yellow-300">Seja Explícito sobre o Público-Alvo:</strong> Se o resultado for para um público técnico ou leigo, mencione isso. Ex: "Explique em termos leigos..." ou "Use terminologia técnica..."
               </div>
-              
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">📏 Defina Limites de Saída</h3>
-                <p className="text-gray-300">Especifique o tamanho da resposta. Ex: "Responda em no máximo 200 palavras" ou "Liste 5 pontos principais."</p>
+                <strong className="text-yellow-300">Defina Limites de Saída:</strong> Especifique o tamanho ou a extensão da resposta. Ex: "Responda em no máximo 200 palavras" ou "Liste 5 pontos principais."
               </div>
-              
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">❓ Peça para a IA Fazer Perguntas</h3>
-                <p className="text-gray-300">Inclua "Se precisar de mais informações, faça perguntas." Isso permite esclarecimentos e evita suposições incorretas.</p>
+                <strong className="text-yellow-300">Peça para a IA Fazer Perguntas:</strong> Inclua uma instrução como "Se precisar de mais informações, faça perguntas." Isso permite que a IA solicite esclarecimentos, evitando suposições incorretas.
               </div>
             </div>
           </div>
@@ -188,8 +131,7 @@ const GuiaPromptsFundamentos = () => {
             to="/guias/prompts"
             className="flex items-center bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Voltar ao Índice
+            Voltar ao Hub
           </Link>
           
           <Link
