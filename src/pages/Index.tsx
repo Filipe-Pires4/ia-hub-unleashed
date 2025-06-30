@@ -33,22 +33,25 @@ const Index = () => {
 
   const recentGuides = [
     {
-      title: "Como Criar Seu Primeiro Prompt Eficaz",
-      description: "Aprenda as técnicas fundamentais para obter os melhores resultados da IA.",
-      readTime: "5 min",
-      category: "Básico"
+      title: "Guia de Prompts para Lovable: 70 Exemplos",
+      description: "Coleção completa de prompts de alta qualidade para desenvolvimento de software, organizados em 8 categorias práticas.",
+      readTime: "45 min",
+      category: "Técnicas",
+      link: "/guias/prompts"
     },
     {
       title: "Automação com IA: Primeiros Passos",
       description: "Descubra como automatizar tarefas simples usando ferramentas de IA.",
       readTime: "8 min",
-      category: "Intermediário"
+      category: "Intermediário",
+      link: "/guias"
     },
     {
       title: "Ética na IA: Guia Prático",
       description: "Entenda os aspectos éticos essenciais no uso de inteligência artificial.",
       readTime: "6 min",
-      category: "Conceitual"
+      category: "Conceitual",
+      link: "/guias"
     }
   ];
 
@@ -113,7 +116,7 @@ const Index = () => {
       </section>
 
       {/* Seção 2: Ferramenta de Chat */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-850">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-6">
@@ -169,7 +172,7 @@ const Index = () => {
                 </p>
                 
                 <Link
-                  to="/guias"
+                  to={guide.link}
                   className="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium transition-colors group"
                 >
                   Ler artigo
