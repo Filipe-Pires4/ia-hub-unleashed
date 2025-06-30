@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Search, Clock, Star, BookOpen, ArrowRight } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -7,12 +8,12 @@ const Guias = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const featuredPost = {
-    title: "Guia Completo: Inteligência Artificial para Iniciantes",
-    description: "Tudo o que você precisa saber para começar sua jornada na IA. Este guia abrangente cobre desde conceitos básicos até as primeiras aplicações práticas.",
+    title: "Seu Guia Ninja para Dominar a Inteligência Artificial",
+    description: "Tudo o que você precisa saber para começar sua jornada na IA. Este guia abrangente cobre desde conceitos básicos até as primeiras aplicações práticas, com dicas ninja e exemplos práticos.",
     readTime: "15 min",
     category: "Essencial",
     isNew: true,
-    link: "/guias/prompts"
+    link: "/guias/ia-iniciantes"
   };
 
   const guides = [
@@ -23,7 +24,7 @@ const Guias = () => {
       category: "Técnicas",
       tags: ["prompts", "lovable", "desenvolvimento"],
       link: "/guias/prompts",
-      isNew: true
+      isNew: false
     },
     {
       title: "Como Criar Prompts Eficazes",

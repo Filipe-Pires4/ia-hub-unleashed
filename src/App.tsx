@@ -23,6 +23,7 @@ import GuiaPromptsBackend from "./pages/GuiaPromptsBackend";
 import GuiaPromptsFrontend from "./pages/GuiaPromptsFrontend";
 import GuiaPromptsArquitetura from "./pages/GuiaPromptsArquitetura";
 import GuiaPromptsEngenhariaPrompt from "./pages/GuiaPromptsEngenhariaPrompt";
+import GuiaIAIniciantes from "./pages/GuiaIAIniciantes";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/guias" element={<Guias />} />
+              <Route path="/guias/ia-iniciantes" element={<GuiaIAIniciantes />} />
               <Route path="/guias/prompts" element={<GuiaPrompts />} />
               <Route path="/guias/prompts/como-criar-prompt" element={<GuiaPromptsFundamentos />} />
               <Route path="/guias/prompts/saas" element={<GuiaPromptsSaas />} />
