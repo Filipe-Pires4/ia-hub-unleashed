@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -24,6 +23,13 @@ import GuiaPromptsFrontend from "./pages/GuiaPromptsFrontend";
 import GuiaPromptsArquitetura from "./pages/GuiaPromptsArquitetura";
 import GuiaPromptsEngenhariaPrompt from "./pages/GuiaPromptsEngenhariaPrompt";
 import GuiaIAIniciantes from "./pages/GuiaIAIniciantes";
+import GuiaPromptsEficazes from "./pages/GuiaPromptsEficazes";
+import GuiaPromptsEficazesOQueEIA from "./pages/GuiaPromptsEficazesOQueEIA";
+import GuiaPromptsEficazesImportancia from "./pages/GuiaPromptsEficazesImportancia";
+import GuiaPromptsEficazesCriarPrompts from "./pages/GuiaPromptsEficazesCriarPrompts";
+import GuiaPromptsEficazesTecnicasAvancadas from "./pages/GuiaPromptsEficazesTecnicasAvancadas";
+import GuiaPromptsEficazesExemplos from "./pages/GuiaPromptsEficazesExemplos";
+import GuiaPromptsEficazesDicas from "./pages/GuiaPromptsEficazesDicas";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +47,13 @@ const App = () => (
               <Route path="/guias" element={<Guias />} />
               <Route path="/guias/ia-iniciantes" element={<GuiaIAIniciantes />} />
               <Route path="/guias/prompts" element={<GuiaPrompts />} />
+              <Route path="/guias/prompts-eficazes" element={<GuiaPromptsEficazes />} />
+              <Route path="/guias/prompts-eficazes/o-que-e-ia" element={<GuiaPromptsEficazesOQueEIA />} />
+              <Route path="/guias/prompts-eficazes/importancia-prompts" element={<GuiaPromptsEficazesImportancia />} />
+              <Route path="/guias/prompts-eficazes/como-criar-prompts" element={<GuiaPromptsEficazesCriarPrompts />} />
+              <Route path="/guias/prompts-eficazes/tecnicas-avancadas" element={<GuiaPromptsEficazesTecnicasAvancadas />} />
+              <Route path="/guias/prompts-eficazes/exemplos-praticos" element={<GuiaPromptsEficazesExemplos />} />
+              <Route path="/guias/prompts-eficazes/dicas-de-ouro" element={<GuiaPromptsEficazesDicas />} />
               <Route path="/guias/prompts/como-criar-prompt" element={<GuiaPromptsFundamentos />} />
               <Route path="/guias/prompts/saas" element={<GuiaPromptsSaas />} />
               <Route path="/guias/prompts/landing-page" element={<GuiaPromptsLandingPage />} />

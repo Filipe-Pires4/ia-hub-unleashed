@@ -10,6 +10,13 @@ const Breadcrumbs = () => {
     const breadcrumbMap: { [key: string]: string } = {
       'guias': 'Guias',
       'prompts': 'Guia de Prompts',
+      'prompts-eficazes': 'Como Criar Prompts Eficazes',
+      'o-que-e-ia': 'O que é IA?',
+      'importancia-prompts': 'Importância dos Prompts',
+      'como-criar-prompts': 'Como Criar Prompts',
+      'tecnicas-avancadas': 'Técnicas Avançadas',
+      'exemplos-praticos': 'Exemplos Práticos',
+      'dicas-de-ouro': 'Dicas de Ouro',
       'ia-iniciantes': 'IA para Iniciantes',
       'como-criar-prompt': 'Como Criar um Bom Prompt',
       'saas': 'Prompts de SaaS',

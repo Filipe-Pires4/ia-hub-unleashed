@@ -27,6 +27,15 @@ const Guias = () => {
       isNew: false
     },
     {
+      title: "Como Criar Prompts Eficazes: Desvendando os Segredos da IA!",
+      description: "Aprenda a fórmula mágica P.R.O.M.P.T., técnicas avançadas como Few-Shot Learning e os segredos dos mestres para criar prompts perfeitos.",
+      readTime: "25 min",
+      category: "Técnicas",
+      tags: ["prompts", "técnicas", "fundamentos", "ia"],
+      link: "/guias/prompts-eficazes",
+      isNew: true
+    },
+    {
       title: "Como Criar Prompts Eficazes",
       description: "Aprenda as técnicas fundamentais para obter os melhores resultados de qualquer IA generativa.",
       readTime: "8 min",
