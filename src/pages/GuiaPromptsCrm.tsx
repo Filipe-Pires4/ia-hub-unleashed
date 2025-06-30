@@ -7,53 +7,53 @@ const GuiaPromptsCrm = () => {
   const prompts = [
     {
       title: "CRM para Setor de Saúde com Conformidade HIPAA",
-      content: "Projete um sistema de CRM para o setor de saúde, garantindo total conformidade com as regulamentações HIPAA para proteção de dados de pacientes, com funcionalidades de agendamento de consultas, histórico médico e comunicação segura.",
-      rating: "10/10 - Crítico, conformidade, segurança."
+      content: "Projete um sistema de Customer Relationship Management (CRM) altamente especializado e seguro, desenvolvido especificamente para atender às rigorosas demandas do setor de saúde. Este sistema deve garantir total e irrestrita conformidade com as regulamentações da HIPAA (Health Insurance Portability and Accountability Act) para a proteção de dados sensíveis de pacientes. As funcionalidades essenciais incluirão agendamento de consultas intuitivo, gestão detalhada do histórico médico do paciente e comunicação segura e criptografada, assegurando a privacidade e a integridade das informações em todas as interações.",
+      rating: "10/10 - Crítico, conformidade, segurança, com foco em privacidade e integridade de dados de saúde."
     },
     {
       title: "Sistema de Gerenciamento de Clientes (CRM) com IA",
-      content: "Desenvolva um sistema de CRM que utilize inteligência artificial para prever o comportamento do cliente, automatizar interações e personalizar ofertas. Inclua módulos para gestão de leads, histórico de interações, automação de marketing e relatórios avançados.",
-      rating: "9/10 - Complexo, IA, automação."
+      content: "Desenvolva um sistema de Gerenciamento de Relacionamento com o Cliente (CRM) de última geração que integre e utilize de forma inteligente a inteligência artificial para prever o comportamento futuro do cliente, automatizar interações personalizadas e otimizar a oferta de produtos e serviços. O sistema deve incluir módulos robustos para gestão eficiente de leads, registro completo do histórico de interações, automação avançada de marketing e relatórios analíticos detalhados, proporcionando insights acionáveis para estratégias de negócios mais eficazes e personalizadas.",
+      rating: "9/10 - Complexo, IA, automação, com foco em personalização e insights acionáveis."
     },
     {
       title: "Integração de CRM com Plataformas de E-commerce",
-      content: "Projete uma solução para integrar um sistema de CRM existente com plataformas de e-commerce populares (ex: Shopify, WooCommerce), sincronizando dados de clientes, pedidos e carrinhos abandonados para otimizar campanhas de marketing e vendas.",
-      rating: "9/10 - Integração, e-commerce, otimização."
+      content: "Projete uma solução de integração abrangente e eficiente para conectar um sistema de Customer Relationship Management (CRM) existente com as plataformas de e-commerce mais populares do mercado, como Shopify e WooCommerce. O objetivo principal é sincronizar de forma contínua e em tempo real dados cruciais de clientes, informações de pedidos e carrinhos abandonados, visando otimizar significativamente as campanhas de marketing e as estratégias de vendas, resultando em maior conversão e retenção de clientes através de uma visão unificada do cliente.",
+      rating: "9/10 - Integração, e-commerce, otimização, com foco em sincronização de dados e visão unificada do cliente."
     },
     {
       title: "CRM com Módulo de Suporte ao Cliente",
-      content: "Desenvolva um CRM que inclua um módulo robusto de suporte ao cliente, com sistema de tickets, base de conhecimento, chat ao vivo e integração com e-mail e telefone, para gerenciar eficientemente as interações de suporte.",
-      rating: "9/10 - Suporte, multicanal, eficiência."
+      content: "Desenvolva um sistema de Customer Relationship Management (CRM) que incorpore um módulo robusto e multifuncional de suporte ao cliente. Este módulo deve incluir um sistema de tickets eficiente para rastreamento de solicitações, uma base de conhecimento abrangente para autoatendimento, funcionalidade de chat ao vivo para suporte em tempo real e integração perfeita com canais de comunicação como e-mail e telefone. O objetivo é gerenciar de forma eficiente e centralizada todas as interações de suporte, garantindo uma resolução rápida e satisfatória para as demandas dos clientes, elevando a qualidade do atendimento.",
+      rating: "9/10 - Suporte, multicanal, eficiência, com foco em resolução rápida e qualidade de atendimento."
     },
     {
       title: "CRM com Análise Preditiva de Churn",
-      content: "Desenvolva um CRM que utilize análise preditiva para identificar clientes com alto risco de churn (cancelamento), oferecendo insights e ferramentas para estratégias de retenção proativas.",
-      rating: "9/10 - Preditivo, retenção, insights."
+      content: "Desenvolva um sistema de Customer Relationship Management (CRM) avançado que utilize análise preditiva de dados para identificar proativamente clientes com alto risco de churn, ou seja, de cancelamento de serviços ou produtos. O sistema deve oferecer insights acionáveis e ferramentas estratégicas para implementar ações de retenção proativas e personalizadas, minimizando a perda de clientes e maximizando o Lifetime Value (LTV). A capacidade de antecipar e agir sobre o churn é crucial para a sustentabilidade e o crescimento do negócio, permitindo intervenções direcionadas e eficazes.",
+      rating: "9/10 - Preditivo, retenção, insights, com foco em minimização de churn e maximização de LTV."
     },
     {
       title: "Prompt de Arquiteto de Software (CRM)",
-      content: "Gere um prompt claro e detalhado para o agente Claude-3.5-Sonnet que o instrua a atuar como um arquiteto de software sênior, com foco em sistemas de CRM. O agente será encarregado de responder a perguntas específicas fornecidas sobre arquitetura de software para CRM. Cada resposta deve ser formulada individualmente e apresentada em um novo documento.",
-      rating: "9/10 - Define papel, detalhado, formato de saída."
+      content: "Gere um prompt claro, conciso e altamente detalhado para o agente Claude-3.5-Sonnet, instruindo-o a atuar como um arquiteto de software sênior, com uma especialização aprofundada em sistemas de Customer Relationship Management (CRM). O agente será encarregado de responder a perguntas específicas e complexas fornecidas sobre a arquitetura de software para CRM. Cada resposta deve ser formulada individualmente, com rigor técnico e clareza, e apresentada em um novo documento, garantindo a organização e a facilidade de consulta das informações arquitetônicas fornecidas.",
+      rating: "9/10 - Define papel, detalhado, formato de saída, com foco em rigor técnico e organização."
     },
     {
       title: "Criando Produtos SaaS para Gerenciamento de Relacionamento com o Cliente",
-      content: "Quero que você atue como um Especialista em Produtos SaaS, e farei algumas perguntas sobre a criação de produtos SaaS para gerenciamento de relacionamento com o cliente. Você pode me ajudar a entender como projetar e desenvolver soluções de software que permitam às empresas gerenciar e fortalecer os relacionamentos com os clientes, usar análise de dados e insights do cliente para personalizar interações e melhorar a satisfação do cliente, e oferecer integrações e opções de personalização para diferentes canais de atendimento ao cliente?",
-      rating: "8/10 - Abrangente, focado em CRM."
+      content: "Atue como um Especialista em Produtos SaaS com vasta experiência em Customer Relationship Management (CRM). Desejo fazer algumas perguntas sobre a criação de produtos SaaS inovadores para o gerenciamento de relacionamento com o cliente. Poderia me auxiliar a compreender como projetar e desenvolver soluções de software que capacitem as empresas a gerenciar e fortalecer proativamente os relacionamentos com seus clientes? Além disso, como podemos utilizar análise de dados e insights do cliente para personalizar interações e melhorar significativamente a satisfação do cliente, oferecendo integrações e opções de personalização para diversos canais de atendimento ao cliente, garantindo uma experiência coesa e positiva?",
+      rating: "8/10 - Abrangente, focado em CRM, com ênfase em personalização e experiência coesa do cliente."
     },
     {
       title: "Criando Produtos SaaS para CRM e Automação de Vendas",
-      content: "Quero que você atue como um Especialista em Produtos SaaS, e farei algumas perguntas sobre a criação de produtos SaaS para CRM e automação de vendas. Você pode me ajudar a entender como projetar e desenvolver soluções de software que permitam às empresas gerenciar e rastrear diferentes estágios de vendas e interações com clientes, usar análise de dados e relatórios para otimizar o desempenho de vendas e marketing, e oferecer opções de personalização e integração para diferentes plataformas de CRM e vendas?",
-      rating: "8/10 - Abrangente, focado em vendas."
+      content: "Atue como um Especialista em Produtos SaaS com profundo conhecimento em CRM e automação de vendas. Tenho algumas questões sobre a criação de produtos SaaS que integrem essas duas áreas cruciais. Poderia me ajudar a entender como projetar e desenvolver soluções de software que permitam às empresas gerenciar e rastrear eficientemente diferentes estágios de vendas e interações com clientes? Adicionalmente, como podemos empregar análise de dados e relatórios detalhados para otimizar o desempenho de vendas e marketing, e oferecer opções de personalização e integração para diversas plataformas de CRM e vendas, maximizando a eficácia das equipes de vendas?",
+      rating: "8/10 - Abrangente, focado em vendas, com ênfase em otimização de desempenho e integração de plataformas."
     },
     {
       title: "Usando Produtos SaaS para Gerenciamento de Vendas e CRM",
-      content: "Quero que você atue como um Especialista em Produtos SaaS, e farei algumas perguntas sobre o uso de produtos SaaS para gerenciamento de vendas e CRM. Você pode me ajudar a entender como usar soluções baseadas em nuvem para gerenciar e rastrear diferentes tipos de operações de vendas e CRM, usar análise de dados e relatórios para otimizar o desempenho e a manutenção de vendas e CRM, e garantir a conformidade com os requisitos regulatórios e de segurança?",
-      rating: "8/10 - Detalhado, focado em vendas."
+      content: "Atue como um Especialista em Produtos SaaS com expertise em gerenciamento de vendas e CRM. Gostaria de fazer algumas perguntas sobre a utilização prática de produtos SaaS para otimizar essas operações. Poderia me auxiliar a compreender como usar soluções baseadas em nuvem para gerenciar e rastrear eficientemente diferentes tipos de operações de vendas e CRM? Além disso, como podemos aplicar análise de dados e relatórios para otimizar continuamente o desempenho e a manutenção das atividades de vendas e CRM, garantindo a conformidade rigorosa com todos os requisitos regulatórios e de segurança de dados, protegendo as informações confidenciais da empresa e dos clientes?",
+      rating: "8/10 - Detalhado, focado em vendas, com ênfase em otimização contínua e conformidade regulatória."
     },
     {
       title: "CRM para Pequenas Empresas com Foco em Usabilidade",
-      content: "Crie um prompt para desenvolver um sistema de CRM simplificado e intuitivo, projetado especificamente para pequenas empresas, com foco em facilidade de uso, baixo custo e funcionalidades essenciais como gestão de contatos, agendamento e acompanhamento de vendas.",
-      rating: "8/10 - Nicho, usabilidade, custo-benefício."
+      content: "Crie um prompt detalhado para o desenvolvimento de um sistema de Customer Relationship Management (CRM) simplificado e altamente intuitivo, projetado especificamente para atender às necessidades e ao orçamento de pequenas empresas. O foco principal deve ser a facilidade de uso, o baixo custo de implementação e manutenção, e a inclusão de funcionalidades essenciais como gestão de contatos, agendamento de compromissos e acompanhamento de vendas. O objetivo é capacitar pequenas empresas a gerenciar seus clientes de forma eficaz, sem a complexidade e o custo de soluções corporativas, promovendo o crescimento sustentável.",
+      rating: "8/10 - Nicho, usabilidade, custo-benefício, com foco em capacitação e crescimento sustentável de pequenas empresas."
     }
   ];
 

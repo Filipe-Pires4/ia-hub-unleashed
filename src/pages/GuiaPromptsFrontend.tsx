@@ -7,53 +7,53 @@ const GuiaPromptsFrontend = () => {
   const prompts = [
     {
       title: "Função WordPress para API Reddit",
-      content: "Crie uma função WordPress que fará uma solicitação de API usando wp_remote_post() para {URL DA API DO REDDIT} usando a chave de API {SUA CHAVE DE API} para gerar uma lista das minhas postagens e comentários mais recentes. Eu sempre uso meu nome de usuário do Reddit, {SEU NOME DE USUÁRIO DO REDDIT}. A função terá os seguintes argumentos opcionais: $limit (inteiro) padrão 20, mas aceita um número entre 1 e 100. Se um valor inválido for fornecido, retorne um WP_Error mencionando o problema. $subreddits (array) padrão [], aceita um array de strings contendo subreddits específicos para incluir postagens e comentários. Quando fornecido, definirá os parâmetros de API apropriados, caso contrário, todas as postagens e comentários serão incluídos.",
-      rating: "10/10 - Extremamente detalhado, funcional, com validação de entrada e tratamento de erro."
-    },
-    {
-      title: "Aplicação Web Progressiva (PWA) para Notícias",
-      content: "Desenvolva uma PWA para um portal de notícias, garantindo carregamento rápido, funcionalidade offline, notificações push e uma experiência de usuário semelhante a um aplicativo nativo.",
-      rating: "10/10 - Offline, rápido, nativo."
+      content: "Crie uma função WordPress altamente otimizada que realizará uma solicitação de API segura e eficiente utilizando `wp_remote_post()` para o endpoint `{URL DA API DO REDDIT}`. Esta função deverá utilizar a chave de API `{SUA CHAVE DE API}` para autenticação e terá como objetivo gerar uma lista abrangente das minhas postagens e comentários mais recentes no Reddit, associados ao meu nome de usuário `{SEU NOME DE USUÁRIO DO REDDIT}`. A função incluirá argumentos opcionais para maior flexibilidade: `$limit` (inteiro), com padrão de 20, aceitando valores entre 1 e 100, e retornando um `WP_Error` para entradas inválidas; e `$subreddits` (array de strings), padrão `[]`, que permitirá filtrar postagens e comentários por subreddits específicos, definindo os parâmetros de API apropriados para inclusão se fornecido, ou abrangendo todas as postagens e comentários caso contrário. Este prompt visa a criação de uma ferramenta robusta e personalizável para gerenciamento de conteúdo do Reddit diretamente no WordPress.",
+      rating: "10/10 - Extremamente detalhado, funcional, com validação de entrada e tratamento de erro, focado em robustez e personalização."
     },
     {
       title: "Interface de Usuário para Plataforma de E-commerce",
-      content: "Desenvolva a interface de usuário completa para uma plataforma de e-commerce responsiva, incluindo páginas de listagem de produtos, detalhes do produto, carrinho de compras, checkout e perfil do usuário, com foco em UX/UI e desempenho.",
-      rating: "9/10 - Completo, responsivo, UX/UI."
+      content: "Desenvolva a interface de usuário completa e responsiva para uma plataforma de e-commerce moderna, garantindo uma experiência de compra fluida e intuitiva em todos os dispositivos. O projeto deve incluir o design e a implementação de páginas essenciais, como a listagem de produtos com filtros avançados, páginas de detalhes do produto com galerias interativas, um carrinho de compras funcional, um fluxo de checkout simplificado e um perfil de usuário abrangente. O foco principal é a excelência em UX/UI, combinando estética visual atraente com desempenho otimizado para garantir carregamento rápido e navegação sem interrupções, elevando a satisfação do cliente e as taxas de conversão.",
+      rating: "9/10 - Completo, responsivo, UX/UI, com foco em experiência de compra e otimização de conversão."
     },
     {
       title: "Dashboard Interativo com Visualizações de Dados",
-      content: "Crie um dashboard interativo utilizando React (ou Vue/Angular) para exibir dados complexos de vendas e marketing, com gráficos dinâmicos, filtros e capacidade de drill-down.",
-      rating: "9/10 - Interativo, dados, visualizações."
+      content: "Crie um dashboard interativo e dinâmico utilizando um framework frontend moderno como React, Vue ou Angular, projetado para exibir dados complexos de vendas e marketing de forma clara e acionável. O dashboard deve incorporar gráficos dinâmicos e personalizáveis, filtros avançados para segmentação de dados e a capacidade de drill-down para análises mais aprofundadas. O objetivo é fornecer aos usuários uma ferramenta poderosa para monitorar métricas de desempenho, identificar tendências e tomar decisões estratégicas baseadas em dados em tempo real, com uma interface intuitiva e visualmente rica.",
+      rating: "9/10 - Interativo, dados, visualizações, com foco em análise estratégica e tomada de decisão."
     },
     {
       title: "Componentes Reutilizáveis com Storybook",
-      content: "Crie uma biblioteca de componentes de UI reutilizáveis utilizando React e Storybook, com documentação interativa e exemplos de uso para cada componente.",
-      rating: "9/10 - Reutilizável, documentado, modular."
+      content: "Crie uma biblioteca de componentes de UI (User Interface) altamente reutilizáveis e modulares utilizando React em conjunto com Storybook. Esta biblioteca deve ser acompanhada de uma documentação interativa e exemplos de uso claros para cada componente, facilitando a colaboração entre designers e desenvolvedores e acelerando o processo de desenvolvimento de novas funcionalidades. O objetivo é estabelecer um sistema de design consistente e escalável, promovendo a padronização visual e a eficiência no desenvolvimento frontend, garantindo a qualidade e a manutenibilidade do código em projetos futuros.",
+      rating: "9/10 - Reutilizável, documentado, modular, com foco em consistência de design e eficiência de desenvolvimento."
     },
     {
       title: "Frontend para Aplicativo de Chat em Tempo Real",
-      content: "Desenvolva a interface de usuário para um aplicativo de chat em tempo real, com exibição de mensagens, lista de contatos, indicadores de digitação e suporte a emojis, utilizando WebSockets para comunicação.",
-      rating: "9/10 - Tempo real, interativo, comunicação."
+      content: "Desenvolva a interface de usuário completa e responsiva para um aplicativo de chat em tempo real, proporcionando uma experiência de comunicação fluida e envolvente. A interface deve incluir a exibição dinâmica de mensagens, uma lista de contatos intuitiva, indicadores de digitação para feedback visual instantâneo e suporte abrangente a emojis para expressividade. A comunicação em tempo real será gerenciada eficientemente utilizando WebSockets, garantindo baixa latência e sincronização perfeita entre os usuários. O objetivo é criar um ambiente de chat moderno e funcional, que promova a interação contínua e satisfatória entre os usuários.",
+      rating: "9/10 - Tempo real, interativo, comunicação, com foco em fluidez e engajamento do usuário."
     },
     {
       title: "Frontend para Plataforma de E-learning com Player de Vídeo Customizado",
-      content: "Desenvolva o frontend para uma plataforma de e-learning, incluindo um player de vídeo customizado com funcionalidades de anotação, controle de velocidade e acompanhamento de progresso do aluno.",
-      rating: "9/10 - Customizado, interativo, aprendizado."
+      content: "Desenvolva o frontend completo para uma plataforma de e-learning inovadora, com um player de vídeo customizado que ofereça funcionalidades avançadas para otimizar a experiência de aprendizado. O player deve incluir recursos como anotações em tempo real, controle de velocidade de reprodução e um sistema de acompanhamento de progresso do aluno. O objetivo é criar um ambiente de aprendizado interativo e personalizado, que capacite os estudantes a absorver o conteúdo de forma mais eficaz, monitorar seu desempenho e engajar-se ativamente com o material didático, promovendo um aprendizado mais profundo e significativo.",
+      rating: "9/10 - Customizado, interativo, aprendizado, com foco em engajamento e personalização do ensino."
     },
     {
       title: "Otimização de Workflow Frontend com Vite",
-      content: "Explique como o Vite pode acelerar o workflow de desenvolvimento frontend, detalhando seus principais recursos e benefícios em comparação com outras ferramentas de build.",
-      rating: "8/10 - Abrangente, focado em ferramenta, comparativo."
+      content: "Explique de forma detalhada e técnica como o Vite, um bundler de próxima geração, pode acelerar significativamente o workflow de desenvolvimento frontend. Aborde seus principais recursos, como o servidor de desenvolvimento instantâneo, a otimização de dependências e o HMR (Hot Module Replacement) ultra-rápido. Compare seus benefícios e vantagens em relação a outras ferramentas de build consolidadas, como Webpack, destacando como o Vite contribui para uma experiência de desenvolvimento mais ágil e produtiva, reduzindo o tempo de espera e aumentando a eficiência do desenvolvedor.",
+      rating: "8/10 - Abrangente, focado em ferramenta, comparativo, com foco em agilidade e produtividade do desenvolvedor."
     },
     {
       title: "Animações Complexas com GSAP/Framer Motion",
-      content: "Implemente animações complexas e fluidas em uma página web utilizando bibliotecas como GSAP ou Framer Motion, para criar uma experiência de usuário envolvente e memorável.",
-      rating: "8/10 - Animações, fluidez, experiência."
+      content: "Implemente animações complexas e fluidas em uma página web existente, utilizando bibliotecas de animação de alto desempenho como GSAP (GreenSock Animation Platform) ou Framer Motion. O objetivo é criar uma experiência de usuário visualmente envolvente e memorável, que aprimore a interatividade e a estética do site. Detalhe a aplicação de transições suaves, microinterações e efeitos visuais que contribuam para uma navegação mais dinâmica e agradável, sem comprometer o desempenho ou a acessibilidade, elevando o nível de profissionalismo e atratividade do design.",
+      rating: "8/10 - Animações, fluidez, experiência, com foco em engajamento visual e profissionalismo."
     },
     {
       title: "Formulário Multi-etapas com Validação",
-      content: "Crie um formulário multi-etapas com validação em cada etapa, barra de progresso e feedback visual para o usuário, otimizando a experiência de preenchimento de formulários longos.",
-      rating: "8/10 - Validação, UX, progresso."
+      content: "Crie um formulário multi-etapas robusto e amigável, com validação de entrada em cada etapa para garantir a integridade dos dados. O formulário deve incluir uma barra de progresso visualmente clara e feedback instantâneo para o usuário, otimizando a experiência de preenchimento de formulários longos e complexos. O objetivo é reduzir a taxa de abandono, guiando o usuário de forma intuitiva através do processo, e melhorar a usabilidade geral, tornando a coleta de informações mais eficiente e menos frustrante, com foco na experiência do usuário e na precisão dos dados.",
+      rating: "8/10 - Validação, UX, progresso, com foco em redução de abandono e precisão de dados."
+    },
+    {
+      title: "Otimização de Performance Frontend",
+      content: "Desenvolva um plano detalhado para otimizar a performance de um aplicativo web frontend existente, visando reduzir o tempo de carregamento, melhorar a responsividade e aprimorar a experiência do usuário. O plano deve incluir estratégias como otimização de imagens, lazy loading de componentes, code splitting, minificação de arquivos CSS e JavaScript, e a implementação de caching. O objetivo é alcançar métricas de Core Web Vitals excelentes, garantindo que o aplicativo seja rápido, eficiente e acessível, proporcionando uma navegação fluida e satisfatória para todos os usuários, independentemente da conexão ou dispositivo.",
+      rating: "9/10 - Performance, otimização, experiência do usuário, com foco em Core Web Vitals e acessibilidade."
     }
   ];
 

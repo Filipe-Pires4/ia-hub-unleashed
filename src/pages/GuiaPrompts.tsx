@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { BookOpen, Building, Layout, Users, Server, Monitor, GitBranch, Wrench } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -134,7 +133,7 @@ const GuiaPrompts = () => {
         <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
           <h2 className="text-2xl font-bold mb-6 text-purple-300">Resumo das Categorias</h2>
           <div className="space-y-4 text-gray-300">
-            <p><strong className="text-purple-200">Prompts de SaaS:</strong> Focados no desenvolvimento e gerenciamento de produtos Software as a Service, cobrindo desde a concepção até a otimização de processos.</p>
+            <p><strong className="text-blue-200">Prompts de SaaS:</strong> Focados no desenvolvimento e gerenciamento de produtos Software as a Service, cobrindo desde a concepção até a otimização de processos.</p>
             <p><strong className="text-cyan-200">Prompts de Landing Page:</strong> Direcionados à criação de páginas de destino eficazes, com ênfase em design, interatividade e otimização para conversão.</p>
             <p><strong className="text-green-200">Prompts de CRM:</strong> Abrangem o desenvolvimento de sistemas de Gerenciamento de Relacionamento com o Cliente, incluindo funcionalidades avançadas como IA e integração.</p>
             <p><strong className="text-red-200">Prompts de Backend:</strong> Concentram-se na arquitetura e implementação de sistemas de servidor, desde APIs RESTful até soluções de processamento de dados em tempo real.</p>
