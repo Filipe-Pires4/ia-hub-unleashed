@@ -41,17 +41,18 @@ const ChatInterface = () => {
     try {
       console.log('Enviando mensagem para o webhook:', currentInput);
       
-      const response = await fetch('https://n8n.desafioalrescate.com/webhook/47171e4f-d4ea-4e1f-8082-762684e1aade', {
-        method: 'POST',
+      // Construir URL com parâmetros de query para GET
+      const webhookUrl = new URL('https://n8n.desafioalrescate.com/webhook/comunidade');
+      webhookUrl.searchParams.append('message', currentInput);
+      webhookUrl.searchParams.append('timestamp', new Date().toISOString());
+      webhookUrl.searchParams.append('session_id', `session_${Date.now()}`);
+      webhookUrl.searchParams.append('source', 'ia_hub_chat');
+      
+      const response = await fetch(webhookUrl.toString(), {
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          message: currentInput,
-          timestamp: new Date().toISOString(),
-          session_id: `session_${Date.now()}`,
-          source: 'ia_hub_chat'
-        }),
       });
 
       if (!response.ok) {
