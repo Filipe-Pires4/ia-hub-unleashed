@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Send, Bot, User } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 interface Message {
   id: number;
@@ -20,6 +21,7 @@ const ChatInterface = () => {
   ]);
   const [inputText, setInputText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const { toast } = useToast();
 
   const handleSendMessage = async () => {
     if (!inputText.trim()) return;
@@ -32,20 +34,66 @@ const ChatInterface = () => {
     };
 
     setMessages(prev => [...prev, userMessage]);
+    const currentInput = inputText;
     setInputText('');
     setIsTyping(true);
 
-    // Simular resposta da IA
-    setTimeout(() => {
+    try {
+      console.log('Enviando mensagem para o webhook:', currentInput);
+      
+      const response = await fetch('https://n8n.desafioalrescate.com/webhook/47171e4f-d4ea-4e1f-8082-762684e1aade', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: currentInput,
+          timestamp: new Date().toISOString(),
+          session_id: `session_${Date.now()}`,
+          source: 'ia_hub_chat'
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Resposta recebida:', data);
+
+      // Processar a resposta do webhook
+      let botResponseText = data.response || data.message || "Obrigado pela sua pergunta! Estou processando sua solicitação e em breve terei uma resposta personalizada para você.";
+
       const botResponse: Message = {
         id: messages.length + 2,
-        text: "Obrigado pela sua pergunta! Para criar um agente de IA eficaz, vou ajudá-lo com algumas sugestões personalizadas. Primeiro, me conte: qual tipo de tarefa você gostaria que seu agente executasse?",
+        text: botResponseText,
         sender: 'bot',
         timestamp: new Date()
       };
+
       setMessages(prev => [...prev, botResponse]);
+      
+    } catch (error) {
+      console.error('Erro ao enviar mensagem:', error);
+      
+      // Fallback para uma resposta padrão em caso de erro
+      const fallbackResponse: Message = {
+        id: messages.length + 2,
+        text: "Desculpe, estou com dificuldades técnicas no momento. Mas posso te ajudar com algumas sugestões: você gostaria de criar um agente para atendimento ao cliente, vendas ou suporte técnico? Conte-me mais sobre seu projeto!",
+        sender: 'bot',
+        timestamp: new Date()
+      };
+      
+      setMessages(prev => [...prev, fallbackResponse]);
+      
+      toast({
+        title: "Aviso",
+        description: "Estou com algumas dificuldades técnicas, mas continuo aqui para ajudar!",
+        variant: "default",
+      });
+    } finally {
       setIsTyping(false);
-    }, 1500);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -129,6 +177,7 @@ const ChatInterface = () => {
             onKeyPress={handleKeyPress}
             placeholder="Digite sua pergunta sobre IA..."
             className="flex-1 bg-gray-700 text-white placeholder-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 border border-gray-600"
+            disabled={isTyping}
           />
           <button
             onClick={handleSendMessage}
