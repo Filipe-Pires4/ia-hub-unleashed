@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { BookOpen, Wrench, Trophy, ArrowRight, Sparkles, Target, Zap } from 'lucide-react';
 import ChatInterface from '../components/ChatInterface';
@@ -14,7 +13,7 @@ const Index = () => {
       gradient: "from-blue-500 to-purple-600"
     },
     {
-      title: "Ferramentas Essenciais",
+      title: "Ferramentas Essenciais", 
       description: "Conheça as 3 ferramentas gratuitas que você precisa.",
       buttonText: "Ver Ferramentas",
       link: "/ferramentas",
@@ -32,6 +31,14 @@ const Index = () => {
   ];
 
   const recentGuides = [
+    {
+      title: "O que torna um atendimento Humano? O Blueprint Secreto da Conexão Digital",
+      description: "Descubra os segredos para humanizar agentes de WhatsApp e criar conexões digitais verdadeiramente humanas.",
+      readTime: "45 min",
+      category: "Avançado",
+      link: "/guias/humanizacao-agentes",
+      isNew: true
+    },
     {
       title: "Guia de Prompts para Lovable: 70 Exemplos",
       description: "Coleção completa de prompts de alta qualidade para desenvolvimento de software, organizados em 8 categorias práticas.",
@@ -160,7 +167,14 @@ const Index = () => {
                   <span className="bg-purple-600 text-purple-100 px-3 py-1 rounded-full text-sm font-medium">
                     {guide.category}
                   </span>
-                  <span className="text-gray-400 text-sm">{guide.readTime}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-400 text-sm">{guide.readTime}</span>
+                    {guide.isNew && (
+                      <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                        NOVO
+                      </span>
+                    )}
+                  </div>
                 </div>
                 
                 <h3 className="text-xl font-bold mb-3 text-white group-hover:text-purple-300 transition-colors">
