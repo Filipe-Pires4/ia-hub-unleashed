@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
@@ -26,6 +25,11 @@ const Breadcrumbs = () => {
       'frontend': 'Prompts de Frontend',
       'arquitetura': 'Prompts de Arquitetura',
       'engenharia-prompt': 'Engenharia de Prompt',
+      'humanizacao-agentes': 'Humanização de Agentes',
+      'contraintuicao': 'A Contraintuição Digital',
+      'micromomentos': 'Micromomentos Inesperados',
+      'dicas-ninjas': 'Dicas Ninjas',
+      'pratica': 'Seção Prática',
       'ferramentas': 'Ferramentas',
       'projetos': 'Projetos & Desafios',
       'sobre': 'Sobre',

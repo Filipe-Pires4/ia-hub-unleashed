@@ -30,6 +30,11 @@ import GuiaPromptsEficazesCriarPrompts from "./pages/GuiaPromptsEficazesCriarPro
 import GuiaPromptsEficazesTecnicasAvancadas from "./pages/GuiaPromptsEficazesTecnicasAvancadas";
 import GuiaPromptsEficazesExemplos from "./pages/GuiaPromptsEficazesExemplos";
 import GuiaPromptsEficazesDicas from "./pages/GuiaPromptsEficazesDicas";
+import GuiaHumanizacaoAgentes from "./pages/GuiaHumanizacaoAgentes";
+import GuiaHumanizacaoAgentesContraintuicao from "./pages/GuiaHumanizacaoAgentesContraintuicao";
+import GuiaHumanizacaoAgentesMicromomentos from "./pages/GuiaHumanizacaoAgentesMicromomentos";
+import GuiaHumanizacaoAgentesDicas from "./pages/GuiaHumanizacaoAgentesDicas";
+import GuiaHumanizacaoAgentesPratica from "./pages/GuiaHumanizacaoAgentesPratica";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +59,11 @@ const App = () => (
               <Route path="/guias/prompts-eficazes/tecnicas-avancadas" element={<GuiaPromptsEficazesTecnicasAvancadas />} />
               <Route path="/guias/prompts-eficazes/exemplos-praticos" element={<GuiaPromptsEficazesExemplos />} />
               <Route path="/guias/prompts-eficazes/dicas-de-ouro" element={<GuiaPromptsEficazesDicas />} />
+              <Route path="/guias/humanizacao-agentes" element={<GuiaHumanizacaoAgentes />} />
+              <Route path="/guias/humanizacao-agentes/contraintuicao" element={<GuiaHumanizacaoAgentesContraintuicao />} />
+              <Route path="/guias/humanizacao-agentes/micromomentos" element={<GuiaHumanizacaoAgentesMicromomentos />} />
+              <Route path="/guias/humanizacao-agentes/dicas-ninjas" element={<GuiaHumanizacaoAgentesDicas />} />
+              <Route path="/guias/humanizacao-agentes/pratica" element={<GuiaHumanizacaoAgentesPratica />} />
               <Route path="/guias/prompts/como-criar-prompt" element={<GuiaPromptsFundamentos />} />
               <Route path="/guias/prompts/saas" element={<GuiaPromptsSaas />} />
               <Route path="/guias/prompts/landing-page" element={<GuiaPromptsLandingPage />} />

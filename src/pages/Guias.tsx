@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Search, Clock, Star, BookOpen, ArrowRight } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -76,6 +75,38 @@ const Guias = () => {
       readTime: "16 min",
       category: "Visão",
       tags: ["visão", "imagens", "reconhecimento"]
+    }
+  ];
+
+  const recentGuides = [
+    {
+      title: "O que torna um atendimento Humano? O Blueprint Secreto da Conexão Digital",
+      description: "Descubra os segredos para humanizar agentes de WhatsApp e criar conexões digitais verdadeiramente humanas.",
+      readTime: "45 min",
+      category: "Avançado",
+      link: "/guias/humanizacao-agentes",
+      isNew: true
+    },
+    {
+      title: "Guia de Prompts para Lovable: 70 Exemplos",
+      description: "Coleção completa de prompts de alta qualidade para desenvolvimento de software, organizados em 8 categorias práticas.",
+      readTime: "45 min",
+      category: "Técnicas",
+      link: "/guias/prompts"
+    },
+    {
+      title: "Automação com IA: Primeiros Passos",
+      description: "Descubra como automatizar tarefas simples usando ferramentas de IA.",
+      readTime: "8 min",
+      category: "Intermediário",
+      link: "/guias"
+    },
+    {
+      title: "Ética na IA: Guia Prático",
+      description: "Entenda os aspectos éticos essenciais no uso de inteligência artificial.",
+      readTime: "6 min",
+      category: "Conceitual",
+      link: "/guias"
     }
   ];
 
