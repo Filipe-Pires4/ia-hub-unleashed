@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Search, Clock, Star, BookOpen, ArrowRight } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -16,6 +17,15 @@ const Guias = () => {
   };
 
   const guides = [
+    {
+      title: "O que torna um atendimento Humano? O Blueprint Secreto da Conexão Digital",
+      description: "Descubra os segredos para humanizar agentes de WhatsApp e criar conexões digitais verdadeiramente humanas.",
+      readTime: "45 min",
+      category: "Avançado",
+      tags: ["humanização", "whatsapp", "agentes", "atendimento"],
+      link: "/guias/humanizacao-agentes",
+      isNew: true
+    },
     {
       title: "Guia de Prompts para Lovable: 70 Exemplos",
       description: "Coleção completa de prompts de alta qualidade para desenvolvimento de software, organizados em 8 categorias práticas.",
@@ -116,7 +126,7 @@ const Guias = () => {
     guide.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
-  const categories = ["Todos", "Técnicas", "Automação", "Ética", "ML", "NLP", "Visão"];
+  const categories = ["Todos", "Técnicas", "Automação", "Ética", "ML", "NLP", "Visão", "Avançado"];
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
   const categoryFilteredGuides = selectedCategory === "Todos" 
