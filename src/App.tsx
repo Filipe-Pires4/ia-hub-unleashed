@@ -35,6 +35,12 @@ import GuiaHumanizacaoAgentesContraintuicao from "./pages/GuiaHumanizacaoAgentes
 import GuiaHumanizacaoAgentesMicromomentos from "./pages/GuiaHumanizacaoAgentesMicromomentos";
 import GuiaHumanizacaoAgentesDicas from "./pages/GuiaHumanizacaoAgentesDicas";
 import GuiaHumanizacaoAgentesPratica from "./pages/GuiaHumanizacaoAgentesPratica";
+import GuiaAquecimentoChip from "./pages/GuiaAquecimentoChip";
+import GuiaAquecimentoChipCriptografia from "./pages/GuiaAquecimentoChipCriptografia";
+import GuiaAquecimentoChipCronograma from "./pages/GuiaAquecimentoChipCronograma";
+import GuiaAquecimentoChipAPIs from "./pages/GuiaAquecimentoChipAPIs";
+import GuiaAquecimentoChipErros from "./pages/GuiaAquecimentoChipErros";
+import GuiaAquecimentoChipCasosDeUso from "./pages/GuiaAquecimentoChipCasosDeUso";
 
 const queryClient = new QueryClient();
 
@@ -64,6 +70,12 @@ const App = () => (
               <Route path="/guias/humanizacao-agentes/micromomentos" element={<GuiaHumanizacaoAgentesMicromomentos />} />
               <Route path="/guias/humanizacao-agentes/dicas-ninjas" element={<GuiaHumanizacaoAgentesDicas />} />
               <Route path="/guias/humanizacao-agentes/pratica" element={<GuiaHumanizacaoAgentesPratica />} />
+              <Route path="/guias/aquecimento-chip" element={<GuiaAquecimentoChip />} />
+              <Route path="/guias/aquecimento-chip/criptografia" element={<GuiaAquecimentoChipCriptografia />} />
+              <Route path="/guias/aquecimento-chip/cronograma" element={<GuiaAquecimentoChipCronograma />} />
+              <Route path="/guias/aquecimento-chip/apis" element={<GuiaAquecimentoChipAPIs />} />
+              <Route path="/guias/aquecimento-chip/erros" element={<GuiaAquecimentoChipErros />} />
+              <Route path="/guias/aquecimento-chip/casos-de-uso" element={<GuiaAquecimentoChipCasosDeUso />} />
               <Route path="/guias/prompts/como-criar-prompt" element={<GuiaPromptsFundamentos />} />
               <Route path="/guias/prompts/saas" element={<GuiaPromptsSaas />} />
               <Route path="/guias/prompts/landing-page" element={<GuiaPromptsLandingPage />} />
