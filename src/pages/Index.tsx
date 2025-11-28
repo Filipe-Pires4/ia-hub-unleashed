@@ -32,6 +32,14 @@ const Index = () => {
 
   const recentGuides = [
     {
+      title: "A Verdade Sobre Aquecimento de Chip no WhatsApp",
+      description: "Entenda o que o WhatsApp realmente monitora e aprenda a aquecer seu chip corretamente.",
+      readTime: "50 min",
+      category: "WhatsApp",
+      link: "/guias/aquecimento-chip",
+      isNew: true
+    },
+    {
       title: "O que torna um atendimento Humano? O Blueprint Secreto da Conexão Digital",
       description: "Descubra os segredos para humanizar agentes de WhatsApp e criar conexões digitais verdadeiramente humanas.",
       readTime: "45 min",
